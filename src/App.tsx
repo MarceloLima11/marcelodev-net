@@ -1,24 +1,12 @@
+import Navbar from "./components/layout/Navbar";
+import About from "./components/layout/About";
+
 function App() {
   return (
     <>
-      <nav>
-        <h1>Marcelo</h1>
-        <a href="#">Sobre mim</a>
-        <a href="#">Onde eu trabalhei?</a>
-        <a href="#">Projetos</a>
-        <a href="#">Habilidades</a>
-      </nav>
+      <Navbar />
 
-      <main>
-        <h2>Olá, sou Marcelo Lima</h2>
-        <p>Software Developer</p>
-        <p>Desenvolvedor de software com experiência desde 2020 em projetos pessoais e de produção. Habilidades
-          em C#, SQL/NoSQL, Golang, JavaScript, React, Docker e Git. Especializado em desenvolvimento de
-          funcionalidades e refatoração de sistemas legados para melhorar desempenho e manutenção.</p>
-
-        <button>Baixe meu CV</button>
-        <button>Contate-me!</button>
-      </main>
+      <About />
 
       <section>
         <h3>Onde eu trabalhei?</h3>
