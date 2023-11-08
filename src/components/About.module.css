@@ -72,7 +72,7 @@
 
 #download:hover {
 
-    background-color: #b14d13;
+    background-color: #cc5a18;
     transform: scale(0.9);
 }
 
@@ -82,15 +82,79 @@
     transform: scale(0.9);
 }
 
+.tech {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    filter: grayscale(1);
+    transition: .5s;
+}
+
+.tech:hover {
+    filter: grayscale(0);
+}
+
 .image_content {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
-.image_content img {
+.image_content .profile_pic {
     width: 50%;
     border-radius: 10px;
     box-shadow: 40px 40px #010326, 60px 60px rgb(255, 255, 255);
+}
+
+.image_content .tech {
+    height: 25%;
+    z-index: 999;
+    animation: rotate 2s linear infinite;
+}
+
+#react {
+    animation: react 8s linear infinite;
+}
+
+#csharp {
+    animation: csharp 9s linear infinite;
+}
+
+#golang {
+    animation: golang 11s linear infinite;
+}
+
+@keyframes react {
+    from {
+        transform: rotate(0deg) translateX(350px);
+    }
+
+    to {
+        transform: rotate(-360deg) translateX(350px);
+    }
+}
+
+@keyframes csharp {
+    from {
+        transform: rotate(0deg) translateX(300px);
+    }
+
+    to {
+        transform: rotate(-360deg) translateX(300px);
+    }
+}
+
+@keyframes golang {
+    from {
+        transform: rotate(0deg) translateX(400px);
+    }
+
+    to {
+        transform: rotate(-360deg) translateX(400px);
+    }
 }

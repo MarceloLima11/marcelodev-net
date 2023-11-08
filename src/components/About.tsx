@@ -1,4 +1,7 @@
 import i from '../images/I.jpg';
+import react_logo from '../images/react.png';
+import go_logo from '../images/golang.png';
+import csharp from '../images/csharp.png';
 
 import styles from './About.module.css';
 
@@ -23,7 +26,10 @@ function About() {
             </div>
 
             <div className={styles.image_content}>
-                <img src={i} alt="Jovem programador carregando um teclado." />
+                <img id={styles.react} className={styles.tech} src={react_logo} alt="Logo reactjs" />
+                <img id={styles.csharp} className={styles.tech} src={csharp} alt="Logo c#" />
+                <img className={styles.profile_pic} src={i} alt="Jovem programador carregando um teclado." />
+                <img id={styles.golang} className={styles.tech} src={go_logo} alt="Logo golang" />
             </div>
         </main>
     );
