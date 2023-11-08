@@ -16,8 +16,10 @@ function About() {
                     funcionalidades e refatoração de sistemas legados para melhorar desempenho e manutenção.</p>
                 <p className={styles.main_text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa inventore recusandae totam dolorem consequatur doloremque corrupti possimus, exercitationem repudiandae, aut, obcaecati distinctio! Maiores, quasi laborum ullam temporibus sequi fugiat iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit aut quae? Rerum, adipisci, sunt ipsum, non aperiam ab fuga in maiores quas facilis esse numquam delectus magni quaerat vel.</p>
 
-                <button id={styles.download}>Baixe meu CV</button>
-                <button id={styles.contact}>Contate-me!</button>
+                <a href="#" id={styles.download}>Baixe meu CV</a>
+                <a href="#" id={styles.contact}>Contate-me!</a>
+
+                <div></div>
             </div>
 
             <div className={styles.image_content}>

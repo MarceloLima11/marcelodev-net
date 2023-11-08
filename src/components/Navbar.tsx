@@ -7,8 +7,6 @@ import styles from './Navbar.module.css';
 
 function Navbar() {
     return (
-        //#region nav
-
         <nav>
             <h1>Marcelo</h1>
 
@@ -39,7 +37,6 @@ function Navbar() {
                 </div>
             </div>
         </nav>
-        //#endregion
     );
 }
 
