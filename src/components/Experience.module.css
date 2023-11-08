@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#experience_main_container {
+    height: 100vh;
+    background-color: #010326;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h3 {
+    color: #F26B1D;
+    text-align: center;
+    font-family: Erica One;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.description {
+
+    color: #FFF;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 809px;
+}
+
+.experience_main_container_content {
+    color: #FFF;
+    padding: 6em;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.experience_main_container_content article {
+    width: 30%;
+}
+
+.experience_main_container_content article img {
+    text-align: center;
+}
+
+.experience_container_history {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.role {
+    text-align: center;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0;
+}

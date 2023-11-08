@@ -1,7 +1,7 @@
-import programmer_with_cat from '../../images/cat2.png';
-import ui_ux_drawing from '../../images/ux.png';
-import team_work from '../../images/teamwork.png';
-import programmer_creating_real_solution from '../../images/realSolution.png';
+import programmer_with_cat from '../images/cat2.png';
+import ui_ux_drawing from '../images/ux.png';
+import team_work from '../images/teamwork.png';
+import programmer_creating_real_solution from '../images/realSolution.png';
 
 import styles from './Navbar.module.css';
 

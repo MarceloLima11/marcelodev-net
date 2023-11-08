@@ -1,5 +1,6 @@
-import Navbar from "./components/pages/Navbar";
-import About from "./components/pages/About";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -8,17 +9,7 @@ function App() {
 
       <About />
 
-      <section>
-        <h3>Onde eu trabalhei?</h3>
-        <article>
-          <p>Estágio Backend</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa quae distinctio magni quisquam excepturi, iure impedit dolore repellendus atque ducimus porro laboriosam omnis voluptatem asperiores natus veritatis nam nisi?</p>
-        </article>
-        <article>
-          <p>Desenvolvedor de Software</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa quae distinctio magni quisquam excepturi, iure impedit dolore repellendus atque ducimus porro laboriosam omnis voluptatem asperiores natus veritatis nam nisi?</p>
-        </article>
-      </section>
+      <Experience />
 
       <section>
         <h3>Meus Projetos</h3>

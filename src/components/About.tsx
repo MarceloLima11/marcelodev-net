@@ -1,4 +1,4 @@
-import i from '../../images/I.jpg';
+import i from '../images/I.jpg';
 
 import styles from './About.module.css';
 
