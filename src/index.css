@@ -2,3 +2,20 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #010326;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #010326;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #F26B1D;
+}
