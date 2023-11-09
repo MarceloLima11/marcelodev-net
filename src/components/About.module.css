@@ -71,7 +71,6 @@
 }
 
 #download:hover {
-
     background-color: #cc5a18;
     transform: scale(0.9);
 }
@@ -80,6 +79,25 @@
     background-color: #F26B1D;
     color: black;
     transform: scale(0.9);
+}
+
+.profile_pic {
+    --color: #ffffff;
+    --border: 10px;
+    --offset: 20px;
+    --gap: 5px;
+
+    --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)), var(--color) 0;
+    --_o: calc(3*var(--offset));
+    padding:
+        calc(var(--gap) + var(--border)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border));
+    background:
+        linear-gradient(var(--_c)) var(--_o) var(--_o),
+        linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
+    background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+
+    background-repeat: no-repeat;
+    width: 50%;
 }
 
 .tech {
@@ -95,6 +113,7 @@
 
 .tech:hover {
     filter: grayscale(0);
+
 }
 
 .image_content {
@@ -105,37 +124,30 @@
     position: relative;
 }
 
-.image_content .profile_pic {
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 40px 40px #010326, 60px 60px rgb(255, 255, 255);
-}
-
 .image_content .tech {
     height: 25%;
     z-index: 999;
-    animation: rotate 2s linear infinite;
 }
 
 #react {
-    animation: react 8s linear infinite;
+    animation: react 9s linear infinite;
 }
 
 #csharp {
-    animation: csharp 9s linear infinite;
+    animation: csharp 8s linear infinite;
 }
 
 #golang {
-    animation: golang 11s linear infinite;
+    animation: golang 10s linear infinite;
 }
 
 @keyframes react {
     from {
-        transform: rotate(0deg) translateX(350px);
+        transform: rotate(0deg) translateX(370px);
     }
 
     to {
-        transform: rotate(-360deg) translateX(350px);
+        transform: rotate(-360deg) translateX(370px);
     }
 }
 
@@ -151,10 +163,54 @@
 
 @keyframes golang {
     from {
-        transform: rotate(0deg) translateX(400px);
+        transform: rotate(0deg) translateX(420px);
     }
 
     to {
-        transform: rotate(-360deg) translateX(400px);
+        transform: rotate(-360deg) translateX(420px);
     }
+}
+
+.social {
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: relative;
+    transition: all 0.3s;
+}
+
+.social span {
+    height: 54px;
+    width: 54px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    margin-right: 28px;
+}
+
+.social span img {
+    transition: .5s;
+}
+
+.social span:hover {
+    transform: translateY(5px);
+}
+
+#linkedin {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#wapp {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#github {
+    max-width: 100%;
+    max-height: 100%;
 }

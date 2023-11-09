@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <>
+    <div style={{ overflow: "hidden" }}>
       <Navbar />
 
       <About />
@@ -16,7 +16,7 @@ function App() {
       <Projects />
 
       <Skills />
-    </>
+    </div>
   )
 }
 
