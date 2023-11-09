@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 #experience_main_container {
     height: 100vh;
     background-color: #010326;
@@ -8,38 +6,40 @@
     align-items: center;
 }
 
-h3 {
-    color: #F26B1D;
+#title {
+    color: #FFF;
     text-align: center;
-    font-family: Erica One;
-    font-size: 100px;
+    font-family: 'Oleo Script', sans-serif;
+    font-size: 55px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .description {
-
-    color: #FFF;
-    font-size: 29px;
+    font-family: 'Montserrat';
+    color: #8C8CA8;
+    font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
-    width: 809px;
+    width: 60%;
+    line-height: 30px;
+    text-align: center;
 }
 
 .experience_main_container_content {
     color: #FFF;
-    padding: 6em;
+    padding: 4em;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .experience_main_container_content article {
-    width: 30%;
+    width: 40%;
 }
 
 .experience_main_container_content article img {
@@ -54,9 +54,16 @@ h3 {
 
 .role {
     text-align: center;
-    font-size: 29px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin: 20px 0;
+}
+
+.job_description {
+    color: #8C8CA8;
+    line-height: 24px;
+    text-align: center;
+    word-spacing: 4px;
 }

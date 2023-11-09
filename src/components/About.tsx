@@ -20,7 +20,7 @@ function About() {
                 <p className={styles.main_text}>Desenvolvedor de software com experiência desde 2020 em projetos pessoais e de produção. Habilidades
                     em C#, SQL/NoSQL, Golang, JavaScript, React, Docker e Git. Especializado em desenvolvimento de
                     funcionalidades e refatoração de sistemas legados para melhorar desempenho e manutenção.</p>
-                <p className={styles.main_text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa inventore recusandae totam dolorem consequatur doloremque corrupti possimus, exercitationem repudiandae, aut, obcaecati distinctio! Maiores, quasi laborum ullam temporibus sequi fugiat iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit aut quae? Rerum, adipisci, sunt ipsum, non aperiam ab fuga in maiores quas facilis esse numquam delectus magni quaerat vel.</p>
+                <p className={styles.main_text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa inventore recusandae totam dolorem consequatur doloremque corrupti possimus, exercitationem repudiandae, aut, obcaecati distinctio! Maiores, quasi laborum ullam temporibus sequi fugiat iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit aut quae? Rerum, adipisci, sunt ipsum, non aperiam ab fuga in maiores quas facilis esse numquam delectus magni quaerat vel<span style={{ color: "#F26B1D" }}>.</span></p>
 
                 <a href="#" id={styles.download}>Baixe meu CV</a>
                 <a href="mailto:marcelolima152021@gmail.com" id={styles.contact}>Contate-me!</a>
