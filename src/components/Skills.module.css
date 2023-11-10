@@ -17,10 +17,11 @@
 }
 
 .card {
-    background-color: white;
     width: 160px;
     height: 150px;
+    transition-duration: .5s;
     border-radius: 30px;
+    background-color: white;
 }
 
 .card img {
@@ -29,18 +30,38 @@
     height: 100%;
 }
 
+.card:hover {
+    transform: translateY(-25%);
+}
+
 #golang_card {
     background: linear-gradient(180deg, #266FAF 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+#golang_card:hover {
+    box-shadow: 0 0 50px 15px #266FAF;
 }
 
 #javascript_card {
     background: linear-gradient(180deg, #DCB426 0%, rgba(217, 217, 217, 0.00) 100%);
 }
 
+#javascript_card:hover {
+    box-shadow: 0 0 50px 15px #DCB426;
+}
+
 #csharp_card {
     background: linear-gradient(180deg, #64246F 0%, rgba(217, 217, 217, 0.00) 100%);
 }
 
+#csharp_card:hover {
+    box-shadow: 0 0 50px 15px #64246F;
+}
+
 #sass_card {
     background: linear-gradient(180deg, #DA207F 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+#sass_card:hover {
+    box-shadow: 0 0 50px 15px #DA207F;
 }

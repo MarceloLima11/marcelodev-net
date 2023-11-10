@@ -1,7 +1,7 @@
-import programmer_with_cat from '../images/cat2.png';
-import ui_ux_drawing from '../images/ux.png';
-import team_work from '../images/teamwork.png';
-import programmer_creating_real_solution from '../images/realSolution.png';
+import team_work from '../images/navbar/team_work.png';
+import dev_with_cat from '../images/navbar/dev_with_cat.png';
+import ui_designing from '../images/navbar/ui_design.png';
+import thinking_real_solution from '../images/navbar/thinking_real_solution.png';
 
 import styles from './Navbar.module.css';
 
@@ -13,13 +13,13 @@ function Navbar() {
             <div className={styles.navbar_main_container}>
                 <div>
                     <img
-                        src={programmer_with_cat}
+                        src={dev_with_cat}
                         alt="Jovem programador com um gato no colo." />
                 </div>
 
                 <div>
                     <img
-                        src={ui_ux_drawing}
+                        src={ui_designing}
                         alt="Ilustrador desenhando uma arte." />
 
                 </div>
@@ -32,7 +32,7 @@ function Navbar() {
 
                 <div>
                     <img
-                        src={programmer_creating_real_solution}
+                        src={thinking_real_solution}
                         alt="Programador pensando em soluções ao lado de fora e de noite." />
                 </div>
             </div>
