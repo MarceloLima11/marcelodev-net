@@ -2,3 +2,11 @@
     height: 100vh;
     background-color: #010326;
 }
+
+.projects_main_container h3 {
+    color: #FFF;
+    font-family: 'Oleo Script', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+}
