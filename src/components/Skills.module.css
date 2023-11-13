@@ -65,3 +65,16 @@
 #sass_card:hover {
     box-shadow: 0 0 50px 15px #8b0d3b;
 }
+
+#react_card {
+    background: linear-gradient(180deg, #3853AA 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+/* ### FIX ### */
+#react_card img {
+    margin-left: 5px;
+}
+
+#react_card:hover {
+    box-shadow: 0 0 50px 15px #3853AA;
+}
