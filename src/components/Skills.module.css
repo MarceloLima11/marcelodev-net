@@ -59,9 +59,9 @@
 }
 
 #sass_card {
-    background: linear-gradient(180deg, #DA207F 0%, rgba(217, 217, 217, 0.00) 100%);
+    background: linear-gradient(180deg, #8b0d3b 0%, rgba(217, 217, 217, 0.00) 100%);
 }
 
 #sass_card:hover {
-    box-shadow: 0 0 50px 15px #DA207F;
+    box-shadow: 0 0 50px 15px #8b0d3b;
 }
