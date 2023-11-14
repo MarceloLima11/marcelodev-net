@@ -13,6 +13,9 @@ function Projects() {
                 <div className={styles.card}><img src={project1} alt="" /></div>
                 <div className={styles.card}></div>
                 <div className={styles.card}></div>
+                <div className={styles.card}></div>
+                <div className={styles.card}></div>
+                <div className={styles.card}></div>
             </div>
         </section>
     );
