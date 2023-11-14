@@ -21,6 +21,7 @@
     height: 150px;
     transition-duration: .5s;
     border-radius: 30px;
+    /*50%*/
     background-color: white;
 }
 
@@ -75,6 +76,8 @@
     margin-left: 5px;
 }
 
+/* ### FIX ### */
+
 #react_card:hover {
     box-shadow: 0 0 50px 15px #3853AA;
 }
@@ -85,4 +88,13 @@
 
 #sql_card:hover {
     box-shadow: 0 0 50px 15px #3E4A58;
+}
+
+
+#ts_card {
+    background: linear-gradient(180deg, #47BFFE 0%, rgba(71, 191, 254, 0.00) 100%, rgba(71, 191, 254, 0.00) 100%);
+}
+
+#ts_card:hover {
+    box-shadow: 0 0 50px 15px #47BFFE;
 }
