@@ -4,6 +4,7 @@
     color: #FFF;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
 }
 
 #about_main_container h2 {
@@ -81,9 +82,9 @@
 
 .profile_pic {
     --color: #ffffff;
-    --border: 10px;
-    --offset: 20px;
-    --gap: 5px;
+    --border: 0.6em;
+    --offset: 1.25em;
+    --gap: 0.3em;
 
     --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)), var(--color) 0;
     --_o: calc(3*var(--offset));
@@ -96,6 +97,7 @@
 
     background-repeat: no-repeat;
     width: 50%;
+    height: 50%;
 }
 
 .tech {
@@ -167,6 +169,7 @@
         transform: rotate(-360deg) translateX(420px);
     }
 }
+
 
 .social {
     display: flex;

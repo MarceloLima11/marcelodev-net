@@ -4,6 +4,7 @@ import sass_hero from '../images/heros/sass/sass_hero.png';
 import csharp_hero from '../images/heros/csharp/csharp_hero.png';
 import react_hero from '../images/heros/react/react_hero.png';
 import sql_hero from '../images/heros/sql/sql_hero.png';
+import ts_hero from '../images/heros/ts/ts_hero.png';
 
 import styles from './Skills.module.css';
 
@@ -19,6 +20,10 @@ function Skills() {
 
                 <div id={styles.javascript_card} className={styles.card}>
                     <img src={js_hero} alt="JavaScript em héroi de desenho animado" />
+                </div>
+
+                <div id={styles.ts_card} className={styles.card}>
+                    <img src={ts_hero} alt="SQL em héri de desenho animado" />
                 </div>
 
                 <div id={styles.csharp_card} className={styles.card}>

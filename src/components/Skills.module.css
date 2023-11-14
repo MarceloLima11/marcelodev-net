@@ -11,9 +11,9 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 59px 92px;
-    height: 200px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -22,6 +22,11 @@
     transition-duration: .5s;
     border-radius: 30px;
     background-color: white;
+    margin-bottom: 20px;
+}
+
+.card:not(:last-child) {
+    margin-right: 20px;
 }
 
 .card img {
@@ -75,6 +80,8 @@
     margin-left: 5px;
 }
 
+/* ### FIX ### */
+
 #react_card:hover {
     box-shadow: 0 0 50px 15px #3853AA;
 }
@@ -85,4 +92,13 @@
 
 #sql_card:hover {
     box-shadow: 0 0 50px 15px #3E4A58;
+}
+
+
+#ts_card {
+    background: linear-gradient(180deg, #47BFFE 0%, rgba(71, 191, 254, 0.00) 100%, rgba(71, 191, 254, 0.00) 100%);
+}
+
+#ts_card:hover {
+    box-shadow: 0 0 50px 15px #47BFFE;
 }
