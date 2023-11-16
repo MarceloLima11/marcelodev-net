@@ -318,8 +318,7 @@
 @media screen and (max-width: 800px) {
     #about_main_container {
         font-size: 13px;
-        padding: 1em;
-
+        padding: 4%;
     }
 
     #download,
