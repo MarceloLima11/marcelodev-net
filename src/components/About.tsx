@@ -5,14 +5,13 @@ import react_icon from '../images/about/react_icon.png';
 import github_icon from '../images/social/github_icon_black.png';
 import csharp_icon from '../images/about/csharp_icon.png';
 import linkedin_icon from '../images/social/linkedin_icon_black.png';
-import docker_icon from '../images/about/docker.png';
 
 import styles from './About.module.css';
 
 function About() {
     return (
         <main id={styles.about_main_container}>
-            <div>
+            <div className={styles.about_main_container_content}>
                 <p className={styles.subtitle}>Olá, <span>sou</span></p>
 
                 <h2>Marcelo Lima</h2>
@@ -56,13 +55,17 @@ function About() {
                 </div>
             </div>
 
-            <div className={styles.image_content}>
+            <div className={styles.image_content + ' ' + styles.about_main_container_content}>
 
                 <img id={styles.react} className={styles.tech} src={react_icon} alt="Logo reactjs" />
 
                 <img id={styles.csharp} className={styles.tech} src={csharp_icon} alt="Logo c#" />
 
-                <img className={styles.profile_pic} src={profile} alt="Jovem programador carregando um teclado." />
+                <div id={styles.profile_border}>
+                    <div>
+                    </div>
+                    <img src={profile} alt="Jovem programador carregando um teclado." />
+                </div>
 
                 <img id={styles.golang} className={styles.tech} src={go_icon} alt="Logo golang" />
             </div>

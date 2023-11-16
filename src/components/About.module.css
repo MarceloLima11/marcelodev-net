@@ -1,10 +1,10 @@
 #about_main_container {
     display: flex;
-    padding: 6em;
+    padding: 5%;
     color: #FFF;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #about_main_container h2 {
@@ -80,26 +80,6 @@
     transform: scale(0.9);
 }
 
-.profile_pic {
-    --color: #ffffff;
-    --border: 0.6em;
-    --offset: 1.25em;
-    --gap: 0.3em;
-
-    --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)), var(--color) 0;
-    --_o: calc(3*var(--offset));
-    padding:
-        calc(var(--gap) + var(--border)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border));
-    background:
-        linear-gradient(var(--_c)) var(--_o) var(--_o),
-        linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
-    background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
-
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 50%;
-}
-
 .tech {
     position: absolute;
     top: 0;
@@ -121,10 +101,12 @@
     justify-content: center;
     text-align: center;
     position: relative;
+    width: 80%;
+    height: 80%;
 }
 
 .image_content .tech {
-    height: 25%;
+    height: 20%;
     z-index: 999;
 }
 
@@ -139,6 +121,7 @@
 #golang {
     animation: golang 10s linear infinite;
 }
+
 
 @keyframes react {
     from {
@@ -182,8 +165,8 @@
 }
 
 .social span {
-    height: 3.3em;
-    width: 3.3;
+    height: 40px;
+    width: 40px;
     background-color: #ffffff;
     border-radius: 50%;
     display: inline-block;
@@ -200,17 +183,204 @@
     transform: translateY(5px);
 }
 
-#linkedin {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#wapp {
-    max-width: 90%;
-    max-height: 90%;
-}
-
+#linkedin,
+#wapp,
 #github {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#profile_border {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#profile_border div {
+    height: 95%;
+    width: 95%;
+    z-index: -1;
+    border: 6px solid white;
+    border-radius: 10px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+}
+
+#profile_border img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1400px) {
+    @keyframes react {
+        from {
+            transform: rotate(0deg) translateX(250px);
+        }
+
+        to {
+            transform: rotate(-360deg) translateX(250px);
+        }
+    }
+
+    @keyframes csharp {
+        from {
+            transform: rotate(0deg) translateX(200px);
+        }
+
+        to {
+            transform: rotate(-360deg) translateX(200px);
+        }
+    }
+
+    @keyframes golang {
+        from {
+            transform: rotate(0deg) translateX(300px);
+        }
+
+        to {
+            transform: rotate(-360deg) translateX(300px);
+        }
+    }
+
+    #react,
+    #csharp,
+    #golang {
+        height: auto;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #about_main_container {
+        flex-direction: column;
+        padding-bottom: 5% !important;
+        align-items: start;
+        margin-bottom: 5%;
+    }
+
+    #about_main_container>.about_main_container_content {
+        margin-bottom: 5%;
+        padding: 5%;
+        width: 100%;
+    }
+
+    @keyframes react {
+        from {
+            transform: rotate(0deg) translateX(250px);
+        }
+
+        to {
+            transform: rotate(-360deg) translateX(250px);
+        }
+    }
+
+    @keyframes csharp {
+        from {
+            transform: rotate(0deg) translateX(200px);
+        }
+
+        to {
+            transform: rotate(-360deg) translateX(200px);
+        }
+    }
+
+    @keyframes golang {
+        from {
+            transform: rotate(0deg) translateX(300px);
+        }
+
+        to {
+            transform: rotate(-360deg) translateX(300px);
+        }
+    }
+
+    .image_content {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about_main_container_content>#profile_border {
+        height: 60%;
+        width: 60%;
+    }
+
+    #react,
+    #csharp,
+    #golang {
+        height: auto;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #about_main_container {
+        font-size: 13px;
+        padding: 1em;
+
+    }
+
+    #download,
+    #contact {
+        width: 100%;
+        padding: 15px 15px;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .image_content {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #about_main_container {
+        font-size: 12px;
+        padding: 5%;
+    }
+
+    .social {
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    @keyframes react {
+        from {
+            transform: rotate(0deg) translateX(140px);
+        }
+
+        to {
+            transform: rotate(-360deg) translateX(140px);
+        }
+    }
+
+    @keyframes csharp {
+        from {
+            transform: rotate(0deg) translateX(120px);
+        }
+
+        to {
+            transform: rotate(-360deg) translateX(120px);
+        }
+    }
+
+    @keyframes golang {
+        from {
+            transform: rotate(0deg) translateX(160px);
+        }
+
+        to {
+            transform: rotate(-360deg) translateX(160px);
+        }
+    }
+
+    #react,
+    #csharp,
+    #golang {
+        height: auto;
+        width: 10%;
+    }
 }
