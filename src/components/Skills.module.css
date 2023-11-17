@@ -27,7 +27,7 @@
 }
 
 .card:not(:last-child) {
-    margin-right: 90px;
+    margin-right: 50px;
 }
 
 .card img {
@@ -111,6 +111,6 @@
     }
 
     .card {
-        margin: 10px 5% !important;
+        margin: 20px 2% !important;
     }
 }
