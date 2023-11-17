@@ -76,12 +76,6 @@
     background: linear-gradient(180deg, #3853AA 0%, rgba(217, 217, 217, 0.00) 100%);
 }
 
-/* ### FIX ### */
-#react_card img {
-    margin-left: 5px;
-}
-
-/* ### FIX ### */
 
 #react_card:hover {
     box-shadow: 0 0 50px 15px #3853AA;
@@ -95,11 +89,28 @@
     box-shadow: 0 0 50px 15px #3E4A58;
 }
 
-
 #ts_card {
     background: linear-gradient(180deg, #47BFFE 0%, rgba(71, 191, 254, 0.00) 100%, rgba(71, 191, 254, 0.00) 100%);
 }
 
 #ts_card:hover {
     box-shadow: 0 0 50px 15px #47BFFE;
+}
+
+#figma_card {
+    background: linear-gradient(180deg, #e64a0a 0%, rgba(71, 191, 254, 0.00) 100%, rgba(71, 191, 254, 0.00) 100%);
+}
+
+#figma_card:hover {
+    box-shadow: 0 0 50px 15px #e64a0a;
+}
+
+@media screen and (max-width: 1200px) {
+    .skills_main_container_images {
+        justify-content: space-around;
+    }
+
+    .card {
+        margin: 10px 5% !important;
+    }
 }
