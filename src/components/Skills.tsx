@@ -24,7 +24,7 @@ function Skills() {
                 </div>
 
                 <div id={styles.ts_card} className={styles.card}>
-                    <img src={ts_hero} alt="SQL em héri de desenho animado" />
+                    <img src={ts_hero} alt="SQL em héroi de desenho animado" />
                 </div>
 
                 <div id={styles.csharp_card} className={styles.card}>

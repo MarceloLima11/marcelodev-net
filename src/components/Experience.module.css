@@ -115,3 +115,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    #gbm_history {
+        min-height: 500px;
+    }
+}

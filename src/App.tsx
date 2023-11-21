@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div style={{ overflow: "hidden" }}>
-      <Navbar />
+      {/* <Navbar /> */}
       <About />
 
       <Experience />
