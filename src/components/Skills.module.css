@@ -114,3 +114,19 @@
         margin: 20px 2% !important;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .skills_main_container {
+        margin-bottom: 50px;
+    }
+
+    .skills_main_container_images {
+        margin: 0px 0px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 140px;
+        height: 130px;
+    }
+}
