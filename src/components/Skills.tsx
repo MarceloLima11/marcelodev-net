@@ -11,7 +11,7 @@ import styles from './Skills.module.css';
 
 function Skills() {
     return (
-        <section className={styles.skills_main_container}>
+        <section id={styles.skills_main_container}>
             <h3>Habilidades</h3>
 
             <div className={styles.skills_main_container_images}>
