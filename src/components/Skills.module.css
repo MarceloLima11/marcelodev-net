@@ -1,4 +1,4 @@
-.skills_main_container h3 {
+#skills_main_container h3 {
     color: #FFF;
     font-family: 'Oleo Script', sans-serif;
     font-weight: bold;
@@ -116,7 +116,7 @@
 }
 
 @media screen and (max-width: 640px) {
-    .skills_main_container {
+    #skills_main_container {
         margin-bottom: 50px;
     }
 
