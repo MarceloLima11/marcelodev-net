@@ -1,3 +1,5 @@
+import xcommand from '../images/Xcommand-recortado.jpeg';
+
 import styles from './Projects.module.css';
 
 function Projects() {
@@ -6,10 +8,30 @@ function Projects() {
             <h3>Projetos</h3>
 
             <div className={styles.projects_main_container_cards}>
-                <div className={styles.card}></div>
-                <div className={styles.card}></div>
-                <div className={styles.card}></div>
-                <div className={styles.card}></div>
+                <div >
+                    <div className={styles.card}>
+                        <img src={xcommand} alt="Xcommand" />
+                    </div>
+                    <p>Xcommand</p>
+                </div>
+                <div >
+                    <div className={styles.card}>
+                        <img src={xcommand} alt="Xcommand" />
+                    </div>
+                    <p>Xcommand</p>
+                </div>
+                <div >
+                    <div className={styles.card}>
+                        <img src={xcommand} alt="Xcommand" />
+                    </div>
+                    <p>Xcommand</p>
+                </div>
+                <div >
+                    <div className={styles.card}>
+                        <img src={xcommand} alt="Xcommand" />
+                    </div>
+                    <p>Xcommand</p>
+                </div>
             </div>
         </section>
     );
