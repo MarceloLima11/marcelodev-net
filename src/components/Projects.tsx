@@ -9,26 +9,23 @@ function Projects() {
 
             <div className={styles.projects_main_container_cards}>
                 <div >
-                    <div className={styles.card}>
-                        <img src={xcommand} alt="Xcommand" />
+                    <div id={styles.xcommand} className={styles.card} >
+
                     </div>
                     <p>Xcommand</p>
                 </div>
                 <div >
                     <div className={styles.card}>
-                        <img src={xcommand} alt="Xcommand" />
                     </div>
                     <p>Xcommand</p>
                 </div>
                 <div >
                     <div className={styles.card}>
-                        <img src={xcommand} alt="Xcommand" />
                     </div>
                     <p>Xcommand</p>
                 </div>
                 <div >
                     <div className={styles.card}>
-                        <img src={xcommand} alt="Xcommand" />
                     </div>
                     <p>Xcommand</p>
                 </div>
