@@ -16,7 +16,7 @@
     flex-wrap: wrap;
 }
 
-.card {
+.hero_card {
     width: 160px;
     height: 150px;
     transition-duration: .5s;
@@ -26,22 +26,35 @@
     margin-bottom: 20px;
 }
 
-.card:not(:last-child) {
+.hero_card:not(:last-child) {
     margin-right: 50px;
 }
 
-.card img {
+.hero_card img {
     text-align: center;
     width: 100%;
     height: 100%;
 }
 
-.card:hover {
+.hero_card p {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    margin: 0;
+}
+
+.hero_card:hover {
     transform: translateY(-25%);
 }
 
 #golang_card {
     background: linear-gradient(180deg, #266FAF 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+#golang_card p span {
+    color: #266FAF;
 }
 
 #golang_card:hover {
@@ -52,12 +65,20 @@
     background: linear-gradient(180deg, #DCB426 0%, rgba(217, 217, 217, 0.00) 100%);
 }
 
+#javascript_card p span {
+    color: #DCB426;
+}
+
 #javascript_card:hover {
     box-shadow: 0 0 50px 15px #DCB426;
 }
 
 #csharp_card {
     background: linear-gradient(180deg, #64246F 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+#csharp_card p span {
+    color: #64246F;
 }
 
 #csharp_card:hover {
@@ -68,6 +89,10 @@
     background: linear-gradient(180deg, #8b0d3b 0%, rgba(217, 217, 217, 0.00) 100%);
 }
 
+#sass_card p span {
+    color: #f73584;
+}
+
 #sass_card:hover {
     box-shadow: 0 0 50px 15px #8b0d3b;
 }
@@ -76,6 +101,9 @@
     background: linear-gradient(180deg, #3853AA 0%, rgba(217, 217, 217, 0.00) 100%);
 }
 
+#react_card p span {
+    color: #3853AA;
+}
 
 #react_card:hover {
     box-shadow: 0 0 50px 15px #3853AA;
@@ -83,6 +111,10 @@
 
 #sql_card {
     background: linear-gradient(180deg, #3E4A58 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+#sql_card p span {
+    color: #3E4A58;
 }
 
 #sql_card:hover {
@@ -93,12 +125,20 @@
     background: linear-gradient(180deg, #47BFFE 0%, rgba(71, 191, 254, 0.00) 100%, rgba(71, 191, 254, 0.00) 100%);
 }
 
+#ts_card p span {
+    color: #47BFFE;
+}
+
 #ts_card:hover {
     box-shadow: 0 0 50px 15px #47BFFE;
 }
 
 #figma_card {
     background: linear-gradient(180deg, #e64a0a 0%, rgba(71, 191, 254, 0.00) 100%, rgba(71, 191, 254, 0.00) 100%);
+}
+
+#figma_card p span {
+    color: #e64a0a;
 }
 
 #figma_card:hover {
@@ -110,7 +150,7 @@
         justify-content: space-around;
     }
 
-    .card {
+    .hero_card {
         margin: 20px 2% !important;
     }
 }
@@ -125,7 +165,7 @@
         justify-content: center;
     }
 
-    .card {
+    .hero_card {
         width: 140px;
         height: 130px;
     }

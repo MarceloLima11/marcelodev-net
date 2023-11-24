@@ -47,7 +47,7 @@
 .card {
     border-radius: 6px;
     overflow: hidden;
-    background-image: url("../images/Xcommand-recortado.jpeg");
+    background-image: url("/assets/Xcommand-recortado.jpeg");
     background-size: 100% 100%;
     transition: background-size 0.3s;
     background-position: center;
@@ -55,5 +55,4 @@
 
 .card:hover {
     background-size: 110% 110%;
-
 }

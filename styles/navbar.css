@@ -14,6 +14,7 @@
     align-items: center;
     bottom: 30px;
     right: 30px;
+    z-index: 999;
 }
 
 .nav_main_container .fab {
@@ -50,8 +51,8 @@
 }
 
 .nav_main_container .fac {
-    width: 32px;
-    height: 200px;
+    width: 20px;
+    height: 170px;
     border-radius: 64px;
     position: absolute;
     background: #fff;
@@ -59,7 +60,7 @@
     padding: 1rem 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     opacity: 0;
-    top: -200px;
+    top: -180px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -94,8 +95,8 @@
 }
 
 .nav_main_container input:checked~.fac {
-    width: 32px;
-    height: 200px;
+    width: 20px;
+    height: 170px;
     animation: fac-animation 0.4s ease-out forwards 0.1s;
     top: -220px;
     opacity: 1;
