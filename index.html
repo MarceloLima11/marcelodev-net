@@ -1,16 +1,271 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + React + TS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Marcelo Lima - Desenvolvedor FullStack</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/experience.css">
+    <link rel="stylesheet" href="./styles/skill.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+
+    <link rel="shortcut icon" href="./assets/fav/favicon.ico" type="image/x-icon">
+
+    <script src="/scripts/scroll_reveal.js" defer></script>
+    <script src="/scripts/carousel.js" defer></script>
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+    <div style="overflow: hidden;">
+
+        <nav class="navbar">
+            <input type="checkbox" />
+            <div class="fab"></div>
+            <div class="fac">
+                <a href="#about_main_container"><img src="./assets/nav/user.png" alt="Sobre mim icone" /></a>
+                <a href="#experience_main_container"><img src="./assets/nav/work.png" alt="Experiência icone" /></a>
+                <a href="#skills_main_container"><img src="./assets/nav/book.png" alt="Habilidades icone" /></a>
+                <a href="#projects_main_container"><img src="./assets/nav/settings.png" alt="Projetos icone" /></a>
+            </div>
+        </nav>
+
+
+        <main id="about_main_container">
+            <div class="about_main_container_content">
+                <p class="subtitle">Olá, <span>sou</span></p>
+
+                <h2>Marcelo Lima</h2>
+
+                <p id="description">Software Developer</p>
+
+                <p class="main_text">Sou um desenvolvedor de software com uma sólida experiência desde 2020,
+                    trabalhando em projetos pessoais e de produção. Possuo habilidades abrangentes em diversas
+                    tecnologias,
+                    incluindo C#, SQL/NoSQL, Golang, JavaScript, React, Docker e Git.</p>
+
+                <p class="main_text">
+                    Meu foco principal é o desenvolvimento de funcionalidades inovadoras e a refatoração de sistemas
+                    legados. Tenho um compromisso constante em aprimorar o desempenho e a manutenibilidade de sistemas
+                    existentes, contribuindo para a evolução contínua da tecnologia<span style="color: #F26B1D">.
+                    </span></p>
+
+                <a id="download" href="./assets/cv/MarceloLima-CV.pdf" download>Baixe meu CV</a>
+                <a href="mailto:marcelolima152021@gmail.com" id="contact">Contate-me!</a>
+
+                <div class="social">
+                    <span>
+                        <a target='_blank' href="https://www.linkedin.com/in/marcelo-lima11/">
+                            <img id="linkedin" src="assets/social/linkedin_icon_black.png" alt="Logo LinkedIn" />
+                        </a>
+                    </span>
+
+
+                    <span>
+                        <a target='_blank' href="https://github.com/MarceloLima11">
+                            <img id="github" src="assets/social/github_icon_black.png" alt="Logo GitHub" />
+                        </a>
+                    </span>
+
+                    <span>
+                        <a target='_blank' href="https://api.whatsapp.com/send?0=pt_BR&phone=13997372895">
+                            <img id="wapp" src="assets/social/wapp_icon_black.png" alt="Logo WhatsApp" />
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="image_content about_main_container_content">
+
+                <img id="react" class="tech" src="assets/about/react_icon.png" alt="Logo reactjs" />
+
+                <img id="csharp" class="tech" src="assets/about/csharp_icon.png" alt="Logo c#" />
+
+                <div id="profile_border">
+                    <div>
+                    </div>
+                    <img src="assets/about/profile.jpg" alt="Jovem programador carregando um teclado." />
+                </div>
+
+                <img id="golang" class="tech" src="assets/about/golang_icon.png" alt="Logo golang" />
+            </div>
+        </main>
+
+
+        <section id="experience_main_container">
+            <h3 id="title">Onde eu trabalhei?</h3>
+            <p class="description">Colaborei em projetos desafiadores, fornecendo soluções inovadoras e resultados
+                impactantes. Busco constantemente oportunidades para crescer e contribuir de forma significativa, aqui
+                está
+                minha trajetória no mercado de trabalho até o momento.</p>
+            <div class="experience_main_container_content">
+                <article class="experience_container_history">
+                    <img src="assets/jobs/gbm_icon_white.png" alt="Logo ModalGr" />
+                    <p class="role">Estágio Backend</p>
+                    <p class="job_description">
+                        Durante meu estágio na ModalGR, foquei no desenvolvimento de backend, colaborando em projetos de
+                        API's REST para otimizar o atendimento ao público, integrar sistemas e aprimorar a experiência
+                        do
+                        usuário. Trabalhei de perto com desenvolvedores experientes, envolvendo-me também com o banco de
+                        dados PostgreSQL, realizando consultas e operações pertinentes.</p>
+                </article>
+
+                <article id="gbm_history" class="experience_container_history">
+                    <img src="assets/jobs/gbm_icon_white.png" alt="Logo GBM Solutions" />
+                    <p class="role">Desenvolvedor de Software</p>
+                    <p class="job_description">Contribuí no desenvolvimento amplo de sistemas de controle de
+                        tráfego e gestão portuária, abrangendo monitoramento de vagões, contêineres e cargas. Realizei
+                        refatoração de um sistema legado de Delphi para C#, desenvolvimento de APIs e aplicativos
+                        desktop
+                        com tecnologias .NET/.NET Framework e EF Core. Tenho experiência sólida em gerenciamento de
+                        dados
+                        usando SQL Server, otimizando o sistema com procedimentos, visualizações e consultas avançadas.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills_main_container" class="reveal">
+            <h3>Habilidades</h3>
+
+            <div class="skills_main_container_images">
+
+                <div class="hero_card">
+                    <div id="golang_card" class="hero_card_image">
+                        <img src="assets/heros/go/go_hero.png" alt="Golang em héroi de desenho animado" />
+                    </div>
+                    <p><span>Go</span>Guardian</p>
+                </div>
+
+                <div class="hero_card">
+                    <div id="javascript_card" class="hero_card_image">
+                        <img src="assets/heros/js/js_hero.png" alt="JavaScript em héroi de desenho animado" />
+                    </div>
+                    <p><span>J</span>ava<span>S</span>torm</p>
+                </div>
+
+                <div class="hero_card">
+                    <div id="ts_card" class="hero_card_image">
+                        <img src="assets/heros/ts/ts_hero.png" alt="TypeScript em héroi de desenho animado" />
+                    </div>
+                    <p><span>T</span>ype<span>S</span>orceress</p>
+                </div>
+
+                <div class="hero_card">
+                    <div id="csharp_card" class="hero_card_image">
+                        <img src="assets/heros/csharp/csharp_hero.png" alt="C# em héroi de desenho animado" />
+                    </div>
+                    <p><span>C#</span>ronaut</p>
+                </div>
+
+                <div class="hero_card">
+                    <div id="sass_card" class="hero_card_image">
+                        <img src="assets/heros/sass/sass_hero.png" alt="Sass em héroi de desenho animado" />
+                    </div>
+                    <p><span>Sass</span>yQueen</p>
+                </div>
+
+                <div class="hero_card">
+                    <div id="react_card" class="hero_card_image">
+                        <img src="assets/heros/react/react_hero.png" alt="ReactJS em héroi de desenho animado" />
+                    </div>
+                    <p><span>React</span>orMan</p>
+                </div>
+
+                <div class="hero_card">
+                    <div id="sql_card" class="hero_card_image">
+                        <img src="assets/heros/sql/sql_hero.png" alt="SQL em héroi de desenho animado" />
+                    </div>
+                    <p><span>S</span>e<span>q</span>ue<span>l</span>izerMan</p>
+                </div>
+
+                <div class="hero_card">
+                    <div id="figma_card" class="hero_card_image">
+                        <img src="assets/heros/figma/figma_hero.png" alt=" Figma em héroi de desenho animado" />
+                    </div>
+                    <p><span>Figma</span>ven</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h3 id="project_title">Projetos</h3>
+
+            <div id="wrapper">
+                <div id="carousel">
+                    <div id="project_cards">
+                        <div>
+                            <div id="xcommand" class="card">
+                                <div class="card_content">
+                                    <p>
+                                        Xcommand é uma ferramenta simples para gerenciar diretórios, projetada para
+                                        facilitar visualizar e manipular arquivos em um sistema de arquivos local.</p>
+
+                                    <a href="#">Código</a>
+                                    <a href="#">Demo</a>
+                                </div>
+                            </div>
+                            <p>Xcommand</p>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <p>aaaaaaa</p>
+                            </div>
+                            <p>Xcommand</p>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <p>aaaaaaa</p>
+                            </div>
+                            <p>Xcommand</p>
+                        </div>
+                        <div>
+                            <div class="card" id="cardtest">
+                                <p>aaaaaaa</p>
+                            </div>
+                            <p>Em breve</p>
+                        </div>
+                        <div>
+                            <div class="card" id="cardtest">
+                                <p>aaaaaaa</p>
+                            </div>
+                            <p>Em breve</p>
+                        </div>
+                        <div>
+                            <div class="card" id="cardtest">
+                                <p>aaaaaaa</p>
+                            </div>
+                            <p>Em breve</p>
+                        </div>
+                        <div>
+                            <div class="card" id="cardtest">
+                                <p>aaaaaaa</p>
+                            </div>
+                            <p>Em breve</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button id="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                    </svg>
+                </button>
+            </div>
+
+        </section>
+    </div>
 </body>
 
 </html>
