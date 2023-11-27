@@ -56,3 +56,8 @@
 .card:hover {
     background-size: 110% 110%;
 }
+
+#cardtest {
+    background-color: #ECECEC;
+    background-image: url("/assets/projects/em_breve.png");
+}
