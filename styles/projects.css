@@ -1,0 +1,135 @@
+#projects {
+    margin: 20px 0;
+
+}
+
+#project_title {
+    color: #FFF;
+    font-family: 'Oleo Script', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+    margin: auto;
+    width: 13%;
+}
+
+#wrapper {
+    width: 85%;
+    margin: 3% auto;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+}
+
+#carousel::-webkit-scrollbar {
+    height: 0;
+}
+
+#prev,
+#next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+#prev {
+    top: 50%;
+    left: 0;
+    transform: translate(100%, -100%);
+    display: none;
+}
+
+#next {
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -100%);
+}
+
+
+#project_cards {
+    display: grid;
+    grid-gap: 70px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.card {
+    height: 500px;
+    width: 330px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-image: url("/assets/projects/em_breve.png");
+    background-color: #ECECEC;
+    background-size: 100% 100%;
+    transition: background-size 0.3s;
+    background-position: center;
+}
+
+.card_content {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.4rem;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card_content a {
+    display: block;
+    text-decoration: none;
+    color: currentColor;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 2%;
+    border: 2px solid black;
+    width: 80%;
+    margin: 2%;
+}
+
+.card:hover {
+    background-size: 110% 110%;
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.6) inset;
+}
+
+.card:hover .card_content {
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.card+p {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 18px;
+    text-align: start;
+}
+
+
+#xcommand {
+    background-image: url('../assets/projects/Xcommand.jpeg');
+}
