@@ -16,12 +16,13 @@
     <link rel="shortcut icon" href="./assets/fav/favicona-16x16.png" type="image/x-icon">
 
     <script src="/scripts/scroll_reveal.js" defer></script>
+    <script src="/scripts/carousel.js" defer></script>
 </head>
 
 <body>
     <div style="overflow: hidden;">
 
-        <nav class="nav_main_container">
+        <nav class="navbar">
             <input type="checkbox" />
             <div class="fab"></div>
             <div class="fac">
@@ -191,32 +192,65 @@
             </div>
         </section>
 
-        <section id="projects_main_container" class="reveal">
-            <h3>Projetos</h3>
+        <section id="projects" class="reveal">
+            <h3 id="project_title">Projetos</h3>
 
-            <div class="projects_main_container_cards">
-                <div>
-                    <div id="xcommand" class="card">
+            <div id="wrapper">
+                <div id="carousel">
+                    <div id="project_cards">
+                        <div>
+                            <div id="xcommand" class="card">
+
+                            </div>
+                            <p>Xcommand</p>
+                        </div>
+                        <div>
+                            <div class="card">
+                            </div>
+                            <p>Xcommand</p>
+                        </div>
+                        <div>
+                            <div class="card">
+                            </div>
+                            <p>Xcommand</p>
+                        </div>
+                        <div>
+                            <div class="card" id="cardtest">
+                            </div>
+                            <p>Em breve</p>
+                        </div>
+                        <div>
+                            <div class="card" id="cardtest">
+                            </div>
+                            <p>Em breve</p>
+                        </div>
+                        <div>
+                            <div class="card" id="cardtest">
+                            </div>
+                            <p>Em breve</p>
+                        </div>
+                        <div>
+                            <div class="card" id="cardtest">
+                            </div>
+                            <p>Em breve</p>
+                        </div>
 
                     </div>
-                    <p>Xcommand</p>
                 </div>
-                <div>
-                    <div class="card">
-                    </div>
-                    <p>Xcommand</p>
-                </div>
-                <div>
-                    <div class="card">
-                    </div>
-                    <p>Xcommand</p>
-                </div>
-                <div>
-                    <div class="card" id="cardtest">
-                    </div>
-                    <p>Em breve</p>
-                </div>
+                <button id="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                    </svg>
+                </button>
             </div>
+
         </section>
     </div>
 </body>

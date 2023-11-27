@@ -259,7 +259,7 @@
     #about_main_container {
         flex-direction: column;
         padding-bottom: 5% !important;
-        align-items: start;
+
         margin-bottom: 5%;
     }
 
