@@ -23,10 +23,13 @@ body {
     background-color: #F26B1D;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #010326;
     font-size: 15px;
-    box-sizing: border-box;
     margin: 0;
 }
 

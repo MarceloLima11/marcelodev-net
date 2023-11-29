@@ -7,10 +7,9 @@
     color: #FFF;
     font-family: 'Oleo Script', sans-serif;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 3.4em;
     text-align: center;
     margin: auto;
-    width: 13%;
 }
 
 #wrapper {
@@ -26,7 +25,6 @@
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-
 }
 
 #carousel::-webkit-scrollbar {
@@ -50,42 +48,44 @@
 #prev {
     top: 50%;
     left: 0;
-    transform: translate(100%, -100%);
+    transform: translate(40%, -40%);
     display: none;
 }
 
 #next {
     top: 50%;
     right: 0;
-    transform: translate(-100%, -100%);
+    transform: translate(-40%, -40%);
 }
 
 
 #project_cards {
     display: grid;
-    grid-gap: 70px;
+    grid-gap: 5%;
     grid-auto-flow: column;
     margin: auto;
-    box-sizing: border-box;
 }
 
 .card {
-    height: 500px;
-    width: 330px;
+    height: 26vw;
+    width: 17vw;
     border-radius: 6px;
     overflow: hidden;
-    background-image: url("/assets/projects/em_breve.png");
-    background-color: #ECECEC;
     background-size: 100% 100%;
     transition: background-size 0.3s;
     background-position: center;
+}
+
+.coming_soon {
+    background-image: url("/assets/projects/em_breve.png");
+    background-color: #ECECEC;
 }
 
 .card_content {
     opacity: 0;
     transform: scale(0);
     transition: 0.8s;
-    font-size: 1.4rem;
+    font-size: 1.4em;
     color: #FFF;
     font-family: 'Montserrat';
     font-weight: 400;
@@ -96,16 +96,20 @@
     flex-direction: column;
 }
 
+.card_content div {
+    width: 100%;
+}
+
 .card_content a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: currentColor;
     font-weight: 600;
     border-radius: 6px;
-    padding: 2%;
-    border: 2px solid black;
-    width: 80%;
-    margin: 2%;
+    padding: 10px;
+    border: 2px solid #fff;
+    width: 38%;
+    margin: 0 4px;
 }
 
 .card:hover {
@@ -119,17 +123,42 @@
 
 }
 
-.card+p {
+.card+p,
+.card_content p {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     margin-top: 18px;
+}
+
+.card_content p {
+    margin: 20px 8px;
+    line-height: 25px;
+    word-spacing: 4px;
+
+}
+
+.card+p {
     text-align: start;
 }
 
 
 #xcommand {
-    background-image: url('../assets/projects/Xcommand.jpeg');
+    background-image: url('../assets/projects/Xcommand.png');
 }
+
+#budget_wise {
+    background-image: url('../assets/projects/budgetwise.png');
+}
+
+#digi_api {
+    background-image: url('../assets/projects/digiapi.png');
+}
+
+#food_nearby {
+    background-image: url('../assets/projects/food_nearby.png');
+}
+
+@media screen and (max-width: 1400px) {}

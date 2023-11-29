@@ -1,10 +1,14 @@
+#skills_main_container {
+    margin-bottom: 5%;
+}
+
 #skills_main_container h3 {
     color: #FFF;
     font-family: 'Oleo Script', sans-serif;
     font-weight: bold;
     font-size: 55px;
     text-align: center;
-
+    margin-top: 0;
 }
 
 .skills_main_container_images {
