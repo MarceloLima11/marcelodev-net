@@ -57,7 +57,7 @@
     position: absolute;
     background: #fff;
     z-index: 2;
-    padding: 1rem 1.5rem;
+    padding: 2rem 2.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     opacity: 0;
     top: -180px;
@@ -96,9 +96,9 @@
 
 .navbar input:checked~.fac {
     width: 20px;
-    height: 170px;
+    height: 180px;
     animation: fac-animation 0.4s ease-out forwards 0.1s;
-    top: -220px;
+    top: -200px;
     opacity: 1;
 }
 
@@ -164,7 +164,7 @@
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     .navbar {
         right: 0;
         left: 10px;
