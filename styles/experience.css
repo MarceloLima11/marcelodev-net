@@ -18,7 +18,7 @@
 }
 
 .description {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #8C8CA8;
     font-size: 22px;
     font-style: normal;
@@ -31,21 +31,17 @@
 
 .experience_main_container_content {
     color: #FFF;
-    padding: 4%;
+    padding: 5%;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    margin: 20px 0;
-}
-
-.experience_main_container_content article {
-    width: 40%;
-    height: 400px;
 }
 
 .experience_container_history {
+    width: 40%;
+    height: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -54,9 +50,7 @@
 .role {
     text-align: center;
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     margin: 20px 0;
 }
 
@@ -72,7 +66,7 @@
         margin-bottom: 100px;
     }
 
-    .experience_main_container_content article {
+    .experience_container_history {
         width: 45%;
     }
 }
@@ -82,42 +76,37 @@
         font-size: 13px;
     }
 
-    .experience_main_container_content article {
-        width: 45%;
-        min-height: 500px;
+    .description {
+        font-size: 20px;
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .experience_main_container_content {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .experience_container_history {
+        width: 100%;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 640px) {
     #title {
-        font-size: 38px;
+        font-size: 40px;
         margin-bottom: 10px;
+    }
+
+    .role {
+        font-size: 20px;
     }
 
     .description {
         font-size: 18px;
         width: 100%;
         padding: 4%;
-    }
-
-    .experience_container_history {
-        margin-bottom: 10px;
-    }
-
-    .experience_main_container_content {
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
-
-    .experience_main_container_content article {
-        width: 100%;
-        min-height: 400px;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #gbm_history {
-        min-height: 500px;
+        margin: 0;
     }
 }

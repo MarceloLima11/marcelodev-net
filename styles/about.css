@@ -3,9 +3,11 @@
     color: #FFF;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    margin: 8% 5%;
     max-width: 100%;
+    margin: 8% 5%;
 }
+
+.about_main_container_content {}
 
 .about_main_container_content h2 {
     color: #F26B1D;
@@ -260,7 +262,6 @@
     }
 
     #about_main_container>.about_main_container_content {
-
         padding: 5%;
         width: 100%;
     }
@@ -317,7 +318,7 @@
 @media screen and (max-width: 800px) {
     #about_main_container {
         font-size: 13px;
-        padding: 4%;
+        /* padding: 4%; */
     }
 
     .about_main_container_content {
@@ -348,7 +349,6 @@
 @media screen and (max-width: 640px) {
     #about_main_container {
         font-size: 12px;
-        padding: 5%;
     }
 
     .about_main_container_content {
