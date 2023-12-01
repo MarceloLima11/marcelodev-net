@@ -1,3 +1,7 @@
+#projects {
+    width: 100%;
+}
+
 #project_title {
     color: #FFF;
     font-family: 'Oleo Script', sans-serif;
@@ -7,9 +11,9 @@
 }
 
 #wrapper {
-    width: 80%;
-    margin: 3% auto;
     position: relative;
+    margin: 3% auto;
+    width: 80%;
 }
 
 #carousel {
@@ -50,19 +54,20 @@
 
 #project_cards {
     display: grid;
-    grid-gap: 5%;
+    grid-gap: 3%;
     grid-auto-flow: column;
     margin: auto;
 }
 
 .card {
-    height: 26vw;
-    width: 17vw;
     border-radius: 4px;
     overflow: hidden;
     background-size: 100% 100%;
     transition: background-size 0.3s;
     background-position: center;
+
+    height: 27vw;
+    width: 18vw;
 }
 
 .coming_soon {
@@ -95,8 +100,9 @@
     height: auto;
 }
 
+.card_content img,
 .card_content_techs img {
-    width: 48%;
+    width: 40%;
 }
 
 .card_content_links a {
@@ -159,12 +165,43 @@
     background-image: url('../assets/projects/food_nearby.png');
 }
 
-@media screen and (max-width: 1536px) {}
+@media screen and (max-width: 1536px) {
+    .card_content p {
+        font-size: 1.4rem;
+    }
 
-@media screen and (max-width: 1280px) {}
+    .card_content_links a {
+        font-size: 1.4rem;
+    }
 
-@media screen and (max-width: 1024px) {}
+    .card_content img {
+        width: 50%;
+    }
 
-@media screen and (max-width: 768px) {}
+    .card_content_techs img {
+        width: 38%;
+    }
+}
 
-@media screen and (max-width: 640px) {}
+@media screen and (max-width: 1000px) {
+    .card {
+        height: 34vw;
+        width: 25vw;
+    }
+
+    #prev,
+    #next {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .card+p {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        height: 47vw;
+        width: 38vw;
+    }
+}
