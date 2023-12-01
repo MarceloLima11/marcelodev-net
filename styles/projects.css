@@ -1,30 +1,19 @@
-#projects {
-    margin: 20px 0;
-
-}
-
 #project_title {
     color: #FFF;
     font-family: 'Oleo Script', sans-serif;
     font-weight: bold;
-    font-size: 3.4em;
+    font-size: 4rem;
     text-align: center;
-    margin: auto;
 }
 
 #wrapper {
-    width: 85%;
+    width: 80%;
     margin: 3% auto;
     position: relative;
-    display: flex;
-    text-align: center;
-    justify-content: center;
 }
 
 #carousel {
     overflow: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
 }
 
 #carousel::-webkit-scrollbar {
@@ -48,14 +37,14 @@
 #prev {
     top: 50%;
     left: 0;
-    transform: translate(40%, -40%);
+    transform: translate(-50%, -50%);
     display: none;
 }
 
 #next {
     top: 50%;
     right: 0;
-    transform: translate(-40%, -40%);
+    transform: translate(50%, -50%);
 }
 
 
@@ -69,7 +58,7 @@
 .card {
     height: 26vw;
     width: 17vw;
-    border-radius: 6px;
+    border-radius: 4px;
     overflow: hidden;
     background-size: 100% 100%;
     transition: background-size 0.3s;
@@ -87,20 +76,30 @@
     transition: 0.8s;
     font-size: 1.4em;
     color: #FFF;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.card_content div {
+    text-align: center;
+    height: 100%;
+    max-height: 100%;
     width: 100%;
+    padding: 4%;
 }
 
-.card_content a {
+.card_content_techs,
+.card_content_links {
+    width: 100%;
+    height: auto;
+}
+
+.card_content_techs img {
+    width: 48%;
+}
+
+.card_content_links a {
     display: inline-block;
     text-decoration: none;
     color: currentColor;
@@ -108,40 +107,39 @@
     border-radius: 6px;
     padding: 10px;
     border: 2px solid #fff;
-    width: 38%;
+    width: 40%;
     margin: 0 4px;
+    font-size: 1.6rem;
 }
 
 .card:hover {
     background-size: 110% 110%;
-    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.6) inset;
+    box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.6) inset;
 }
 
 .card:hover .card_content {
     opacity: 1;
     transform: scale(1);
-
 }
 
 .card+p,
 .card_content p {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     margin-top: 18px;
 }
 
 .card_content p {
-    margin: 20px 8px;
-    line-height: 25px;
+    margin: 14px 6px;
+    line-height: 20px;
     word-spacing: 4px;
-
+    font-size: 1.6rem;
 }
 
 .card+p {
     text-align: start;
+    font-size: 1.7rem
 }
 
 
@@ -161,4 +159,12 @@
     background-image: url('../assets/projects/food_nearby.png');
 }
 
-@media screen and (max-width: 1400px) {}
+@media screen and (max-width: 1536px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 640px) {}
