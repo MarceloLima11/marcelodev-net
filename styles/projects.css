@@ -196,12 +196,16 @@
 }
 
 @media screen and (max-width: 640px) {
+    #project_cards {
+        grid-gap: 5%;
+    }
+
     .card+p {
         font-size: 1.4rem;
     }
 
     .card {
-        height: 47vw;
-        width: 38vw;
+        height: 44vw;
+        width: 35vw;
     }
 }
