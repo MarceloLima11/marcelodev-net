@@ -79,6 +79,7 @@
     .experience_history {
         width: 100%;
         height: auto;
+        margin: 1.4rem 0;
     }
 
     #experience_wrapper {
