@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="3EnptwsKk7-R_iC8T94ct3pisim-fuXBHECu6a9oN_M" />
+    <meta name="description"
+        content="Portfólio de Marcelo Lima, Desenvolvedor FullStack. Conheça minhas habilidades, experiência e projetos.">
 
     <title>Portfólio | Marcelo Lima - Desenvolvedor FullStack</title>
     <link rel="shortcut icon" href="./assets/fav/favicon.ico" type="image/x-icon">
@@ -25,29 +27,36 @@
             <input type="checkbox" />
             <div class="fab"></div>
             <div class="fac">
-                <a href="#about_main_container"><img src="./assets/nav/user.png" alt="Sobre mim icone" /></a>
-                <a href="#experience_main_container"><img src="./assets/nav/work.png" alt="Experiência icone" /></a>
-                <a href="#skills_main_container"><img src="./assets/nav/book.png" alt="Habilidades icone" /></a>
-                <a href="#projects"><img src="./assets/nav/settings.png" alt="Projetos icone" /></a>
+                <a href="#about" aria-label="Sobre mim"><img src="./assets/nav/user.png" alt="Sobre mim ícone" /></a>
+
+                <a href="#experience_main_container" aria-label="Experiência"><img src="./assets/nav/work.png"
+                        alt="Experiência ícone" /></a>
+
+                <a href="#skills_main_container" aria-label="Habilidades"><img src="./assets/nav/book.png"
+                        alt="Habilidades ícone" /></a>
+
+                <a href="#projects" aria-label="Projetos"><img src="./assets/nav/settings.png"
+                        alt="Projetos ícone" /></a>
             </div>
         </nav>
 
-        <main id="about_main_container">
-            <div class="about_main_container_content">
+        <main id="about">
+            <div class="about_wrapper">
                 <p id="upertitle">Olá, <span>sou</span></p>
 
-                <h2>Marcelo Lima</h2>
+                <h1 id="about_title">Marcelo Lima</h1>
 
                 <p id="subtitle">Software Developer</p>
 
-                <p class="main_text">Sou um desenvolvedor de software com uma sólida experiência desde 2020,
+                <p class="about_main_text">Sou um desenvolvedor de software com uma sólida experiência desde 2020,
                     trabalhando em projetos pessoais e de produção. Possuo habilidades abrangentes em diversas
                     tecnologias,
                     incluindo C#, SQL/NoSQL, Golang, JavaScript, React, Docker e Git.</p>
 
-                <p class="main_text">
+                <p class="about_main_text">
                     Meu foco principal é o desenvolvimento de funcionalidades inovadoras e a refatoração de sistemas
-                    legados. Tenho um compromisso constante em aprimorar o desempenho e a manutenibilidade de sistemas
+                    legados. Tenho um compromisso constante em aprimorar o desempenho e a manutenibilidade de
+                    sistemas
                     existentes, contribuindo para a evolução contínua da tecnologia<span style="color: #F26B1D">.
                     </span></p>
 
@@ -56,62 +65,60 @@
 
                 <div class="social">
                     <span>
-                        <a target='_blank' href="https://www.linkedin.com/in/marcelo-lima11/">
-                            <img id="linkedin" src="assets/social/linkedin_icon_black.png" alt="Logo LinkedIn" />
-                        </a>
-                    </span>
-
-
-                    <span>
-                        <a target='_blank' href="https://github.com/MarceloLima11">
-                            <img id="github" src="assets/social/github_icon_black.png" alt="Logo GitHub" />
+                        <a target='_blank' href="https://www.linkedin.com/in/marcelo-lima11/"
+                            aria-label="LinkedIn de Marcelo Lima">
+                            <img id="linkedin" src="assets/social/linkedin_icon_black.svg" alt="Logo LinkedIn" />
                         </a>
                     </span>
 
                     <span>
-                        <a target='_blank' href="https://api.whatsapp.com/send?0=pt_BR&phone=13997372895">
-                            <img id="wapp" src="assets/social/wapp_icon_black.png" alt="Logo WhatsApp" />
+                        <a target='_blank' href="https://github.com/MarceloLima11" aria-label="GitHub de Marcelo Lima">
+                            <img id="github" src="assets/social/github_icon_black.svg" alt="Logo GitHub" />
+                        </a>
+                    </span>
+
+                    <span>
+                        <a target='_blank' href="https://api.whatsapp.com/send?0=pt_BR&phone=13997372895"
+                            aria-label="WhatsApp de Marcelo Lima">
+                            <img id="wapp" src="assets/social/wapp_icon_black.svg" alt="Logo WhatsApp" />
                         </a>
                     </span>
                 </div>
             </div>
 
-            <div class="image_content about_main_container_content">
+            <div class="about_wrapper images_wrapper">
+                <img id="react" class="tech" src="assets/about/react_icon.png" alt="Logo React.js" />
 
-                <img id="react" class="tech" src="assets/about/react_icon.png" alt="Logo reactjs" />
+                <img id="csharp" class="tech" src="assets/about/csharp_icon.png" alt="Logo C#" />
 
-                <img id="csharp" class="tech" src="assets/about/csharp_icon.png" alt="Logo c#" />
-
-                <div id="profile_border">
-                    <div>
-                    </div>
+                <div id="profile">
                     <img src="assets/about/profile.jpg" alt="Jovem programador carregando um teclado." />
                 </div>
 
-                <img id="golang" class="tech" src="assets/about/golang_icon.png" alt="Logo golang" />
+                <img id="golang" class="tech" src="assets/about/golang_icon.png" alt="Logo Golang" />
             </div>
         </main>
 
-        <section id="experience_main_container" class="reveal">
+        <section id="experience" class="reveal">
 
-            <h3 id="title">Onde eu trabalhei?</h3>
+            <h2 id="experience_title">Onde eu trabalhei?</h2>
 
-            <p class="description">
+            <p id="experience_main_text">
                 Colaborei em projetos desafiadores, fornecendo soluções inovadoras e resultados
                 impactantes. Busco constantemente oportunidades para crescer e contribuir de forma significativa, aqui
                 está
                 minha trajetória no mercado de trabalho até o momento.
             </p>
 
-            <div class="experience_main_container_content">
+            <div id="experience_wrapper">
 
-                <article class="experience_container_history">
+                <article class="experience_history">
 
                     <img src="assets/jobs/modal_icon_white.png" alt="Logo ModalGr" />
 
                     <p class="role">Estágio Backend</p>
 
-                    <p class="job_description">
+                    <p class="info">
                         Durante meu estágio na ModalGR, desenvolvi API's REST para otimizar o atendimento, integrar
                         sistemas e aprimorar a experiência do usuário. Trabalhei em estreita colaboração com
                         desenvolvedores experientes e também lidei com o banco de dados PostgreSQL, realizando consultas
@@ -120,12 +127,12 @@
 
                 </article>
 
-                <article id="gbm_history" class="experience_container_history">
+                <article class="experience_history">
                     <img src="assets/jobs/gbm_icon_white.png" alt="Logo GBM Solutions" />
 
                     <p class="role">Desenvolvedor de Software</p>
 
-                    <p class="job_description">Contribuí no desenvolvimento amplo de sistemas de controle de
+                    <p class="info">Contribuí no desenvolvimento amplo de sistemas de controle de
                         tráfego e gestão portuária, abrangendo monitoramento de vagões, contêineres e cargas. Realizei
                         refatoração de um sistema legado de Delphi para C#, desenvolvimento de APIs e aplicativos
                         desktop
@@ -134,13 +141,14 @@
                         usando SQL Server, otimizando o sistema com procedimentos, visualizações e consultas avançadas.
                     </p>
                 </article>
+
             </div>
         </section>
 
-        <section id="skills_main_container" class="reveal">
-            <h3>Habilidades</h3>
+        <section id="skills" class="reveal">
+            <h2>Habilidades</h2>
 
-            <div class="skills_main_container_images">
+            <div id="skills_wrapper">
 
                 <div class="hero_card">
                     <div id="golang_card" class="hero_card_image">
@@ -202,9 +210,9 @@
         </section>
 
         <section id="projects" class="reveal">
-            <h3 id="project_title">Projetos</h3>
+            <h2 id="project_title">Projetos</h2>
 
-            <div id="wrapper">
+            <div id="projects_wrapper">
                 <div id="carousel">
                     <div id="project_cards">
 
@@ -213,8 +221,8 @@
                                 <div class="card_content">
 
                                     <div class="card_content_techs">
-                                        <img src="./assets/techs/csharp_tech.png" alt="C# logo">
-                                        <img src="./assets/techs/postgres_tech.png" alt="PostgreSQL logo">
+                                        <img src="./assets/techs/csharp_tech.png" alt="Logo C#">
+                                        <img src="./assets/techs/postgres_tech.png" alt="Logo PostgreSQL">
                                     </div>
 
                                     <p>Introduzo o backend robusto da DMO Wikipedia, dedicado a proporcionar uma
@@ -234,7 +242,7 @@
                         <div>
                             <div id="budget_wise" class="card">
                                 <div class="card_content">
-                                    <img src="./assets/techs/react_tech.png" alt="React logo">
+                                    <img src="./assets/techs/react_tech.png" alt="Logo React.js ">
 
                                     <p>Uma solução prática para manter seus projetos financeiramente alinhados.</p>
 
@@ -253,8 +261,8 @@
                                 <div class="card_content">
 
                                     <div class="card_content_techs">
-                                        <img src="./assets/techs/go_tech.png" alt="Golang logo">
-                                        <img src="./assets/techs/mongo_tech.png" alt="">
+                                        <img src="./assets/techs/go_tech.png" alt="Logo Golang">
+                                        <img src="./assets/techs/mongo_tech.png" alt="Logo MongoDB">
                                     </div>
 
 
@@ -275,7 +283,7 @@
                         <div>
                             <div id="xcommand" class="card">
                                 <div class="card_content">
-                                    <img src="./assets/techs/go_tech.png" alt="Golang logo">
+                                    <img src="./assets/techs/go_tech.png" alt="Logo Golang">
 
                                     <p>Desenvolvi um prático explorador de diretórios para o terminal, tornando a
                                         navegação entre pastas uma tarefa fácil.</p>

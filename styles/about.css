@@ -1,4 +1,4 @@
-#about_main_container {
+#about {
     display: flex;
     color: #FFF;
     align-items: center;
@@ -7,7 +7,7 @@
     padding: 8% 5%;
 }
 
-.about_main_container_content h2 {
+#about_title {
     color: #F26B1D;
     font-size: 4.2rem;
     font-weight: 400;
@@ -28,16 +28,16 @@
 }
 
 #upertitle span,
-.main_text span {
+.about_main_text span {
     color: #F26B1D;
     font-weight: 700;
 }
 
-#about_main_container div {
+#about div {
     width: 50%;
 }
 
-#about_main_container .main_text {
+#about .about_main_text {
     font-size: 2rem;
     font-style: normal;
     font-weight: 300;
@@ -97,14 +97,14 @@
     filter: grayscale(0);
 }
 
-.image_content {
+.images_wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.image_content .tech {
+.images_wrapper .tech {
     height: 20%;
     z-index: 999;
 }
@@ -188,13 +188,13 @@
     height: 100%;
 }
 
-#profile_border {
+#profile {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-#profile_border div {
+#profile div {
     height: 95%;
     width: 95%;
     z-index: -1;
@@ -205,7 +205,7 @@
     top: 15%;
 }
 
-#profile_border img {
+#profile img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -251,12 +251,12 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #about_main_container {
+    #about {
         flex-direction: column;
         margin-bottom: 10%;
     }
 
-    #about_main_container>.about_main_container_content {
+    #about>.about_wrapper {
         padding: 5%;
         width: 100%;
     }
@@ -291,13 +291,13 @@
         }
     }
 
-    .image_content {
+    .images_wrapper {
         height: 100%;
         width: 100%;
         align-items: center;
     }
 
-    .about_main_container_content>#profile_border {
+    .about_wrapper>#profile {
         height: 60%;
         width: 60%;
     }
@@ -311,7 +311,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .about_main_container_content {
+    .about_wrapper {
         max-width: 100%;
     }
 
@@ -323,7 +323,7 @@
         text-align: center;
     }
 
-    .image_content {
+    .images_wrapper {
         width: 50%;
         height: 50%;
     }
@@ -338,7 +338,7 @@
 
 @media screen and (max-width: 640px) {
 
-    .about_main_container_content {
+    .about_wrapper {
 
         width: 100%;
     }
