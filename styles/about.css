@@ -337,6 +337,18 @@
 }
 
 @media screen and (max-width: 640px) {
+    #about_title {
+        font-size: 4rem;
+    }
+
+
+    #about .about_main_text {
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 3.2rem;
+        margin: .7em 0;
+    }
 
     .about_wrapper {
 
