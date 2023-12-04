@@ -118,6 +118,12 @@
     font-size: 1.6rem;
 }
 
+.link_disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 .card:hover {
     background-size: 110% 110%;
     box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.6) inset;
@@ -251,14 +257,14 @@
 
     .card {
         height: 44vw;
-        width: 35vw;
+        width: 30vw;
     }
 }
 
 @media screen and (max-width: 480px) {
     .card {
         height: 59vw;
-        width: 50vw;
+        width: 42vw;
     }
 
     .card_content p {
