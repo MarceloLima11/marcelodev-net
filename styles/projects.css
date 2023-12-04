@@ -263,8 +263,8 @@
 
 @media screen and (max-width: 480px) {
     .card {
-        height: 59vw;
-        width: 42vw;
+        height: 64vw;
+        width: 46vw;
     }
 
     .card_content p {
