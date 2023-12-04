@@ -1,8 +1,8 @@
-#skills_main_container {
+#skills {
     margin-bottom: 5%;
 }
 
-#skills_main_container h3 {
+#skills h3 {
     color: #FFF;
     font-family: 'Oleo Script', sans-serif;
     font-weight: bold;
@@ -11,7 +11,7 @@
     margin-top: 0;
 }
 
-.skills_main_container_images {
+#skills_wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
