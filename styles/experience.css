@@ -47,7 +47,7 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .info {
@@ -57,6 +57,7 @@
     word-spacing: .4rem;
     line-height: 2.6rem;
     font-weight: 400;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
