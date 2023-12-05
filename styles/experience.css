@@ -72,12 +72,12 @@
 
 @media screen and (max-width: 800px) {
     #experience_main_text {
-        width: 90%;
+        width: 80%;
         margin-top: 0;
     }
 
     .experience_history {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin: 1.4rem 0;
     }
